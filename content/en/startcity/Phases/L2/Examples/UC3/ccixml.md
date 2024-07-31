@@ -8,7 +8,7 @@ type: docs
 weight: 40
 description:
 ---
-> This example shows a Bordero with the unique Borderau ID (e.g. VCT12345), TRANSPORT SECURITY AND OSI
+>  BORDERO (NOT SECURED) WITH UNIQUE BORDERO ID (e.g. VCT12345), TRANSPORT SECURITY AND OSI INFORMATION
 
 ### Manifest
 ```xml

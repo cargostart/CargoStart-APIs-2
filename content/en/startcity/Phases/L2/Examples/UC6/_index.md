@@ -6,7 +6,7 @@ type: docs
 weight: 60
 ---
 
-> Bordero (SECURED WITH RA INDICATION) WITH TRASPORT INFORMATIONS
+> BORDERO (SECURED WITH RA INDICATION) WITH TRASPORT INFORMATIONS
 ```
 FFM/8
 1/AA0000A/07DEC/MXP
@@ -28,4 +28,4 @@ OCI///ST/..S..1..S..
 LAST
 ```
 
-> in this case the ..AG.. tag specify the FFCode as "CSF"
+> in this case the ..AG.. tag specifies the FFCode as "CSF"

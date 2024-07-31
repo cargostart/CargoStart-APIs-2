@@ -8,7 +8,7 @@ type: docs
 weight: 40
 description: 
 ---
-> FWB WITH SECURITY INFO AND DELEGATION TO SECURITY DECLARATION
+> XML FWB WITH CUSTOM DECLARATION AND SECURITY INFORMATION "NSC"
 
 ### MAWB
 ```xml
@@ -339,14 +339,6 @@ description:
 			</InformationIdentifier>
 			<SupplementaryCustomsInformation>
 				X
-			</SupplementaryCustomsInformation>
-		</OCI>
-		<OCI>
-			<CustomsInformationIdentifier>
-				ST
-			</CustomsInformationIdentifier>
-			<SupplementaryCustomsInformation>
-				..DSI..XXX..DSI..
 			</SupplementaryCustomsInformation>
 		</OCI>
 	</OtherCustomsInformation>
