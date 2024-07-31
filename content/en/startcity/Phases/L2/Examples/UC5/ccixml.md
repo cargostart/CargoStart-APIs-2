@@ -8,7 +8,7 @@ type: docs
 weight: 80
 description:
 ---
-> Bordero (NOT SECURED) WITH TRASPORT DELEGATION
+> BORDERO (NOT SECURED) WITH ULDs
 
 ### Manifest
 ```xml
@@ -220,10 +220,6 @@ description:
                   <CustomsInformationIdentifier>ST</CustomsInformationIdentifier>
                   <SupplementaryCustomsInformation>..H..ALH..H..</SupplementaryCustomsInformation>
                 </OCI>
-                <OCI>
-                  <CustomsInformationIdentifier>ST</CustomsInformationIdentifier>
-                  <SupplementaryCustomsInformation>..DTI..BRT..DTI..</SupplementaryCustomsInformation>
-                </OCI>
               </OtherCustomsInformation>
             </PART4>
           </BulkLoadedCargo>
@@ -233,3 +229,6 @@ description:
   </DestinationHeader>
 </AirlineManifest>
 ```
+> Please Note:
+> - By default if "..AG.." tag is not present, the sender SmartCityMXP freight forwarder code will be used
+> - if "..S.." tag is not present, **the bordero is not secured**. 

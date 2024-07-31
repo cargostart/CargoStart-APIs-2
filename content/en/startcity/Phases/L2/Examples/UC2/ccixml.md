@@ -8,7 +8,9 @@ type: docs
 weight: 40
 description:
 ---
-> Bordero (NOT SECURED) AND TRANSPORT SECURITY WITH SEAL AND PLATE
+
+> BORDERO (NOT SECURED) WITH TRANSPORT SECURITY, SEAL AND PLATE NUMBERS
+
 
 ### Manifest
 ```xml
@@ -241,6 +243,10 @@ description:
                 <OCI>
                   <CustomsInformationIdentifier>ST</CustomsInformationIdentifier>
                   <SupplementaryCustomsInformation>..AG..VCT..AG..</SupplementaryCustomsInformation>
+                </OCI>
+                <OCI>
+                  <CustomsInformationIdentifier>ST</CustomsInformationIdentifier>
+                  <SupplementaryCustomsInformation>..CN..JOHN DOE LTD..CN..</SupplementaryCustomsInformation>
                 </OCI>
                 <OCI>
                   <CustomsInformationIdentifier>ST</CustomsInformationIdentifier>

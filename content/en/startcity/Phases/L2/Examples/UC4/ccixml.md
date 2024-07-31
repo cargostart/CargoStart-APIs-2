@@ -8,7 +8,7 @@ type: docs
 weight: 40
 description:
 ---
-> NOT SECURED Bordero with NO ULDs, TRASPORT INFORMATIONS AND Bordero ID SPECIFICATION
+> BORDERO (NOT SECURED) WITH NO ULDs, TRASPORT information AND BORDERO ID SPECIFICATION
 
 ### Manifest
 ```xml
@@ -70,7 +70,7 @@ description:
             </OCI>
             <OCI>
               <CustomsInformationIdentifier>ST</CustomsInformationIdentifier>
-              <SupplementaryCustomsInformation>..BDX..1234567..BDX..</SupplementaryCustomsInformation>
+              <SupplementaryCustomsInformation>..BDX..VCT1234567..BDX..</SupplementaryCustomsInformation>
             </OCI>
             <OCI>
               <CustomsInformationIdentifier>ST</CustomsInformationIdentifier>

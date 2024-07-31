@@ -6,7 +6,7 @@ type: docs
 weight: 50
 ---
 
-> Bordero (NOT SECURED) WITH TRASPORT DELEGATION
+> BORDERO (NOT SECURED) WITH ULDs
 
 ```
 FFM/8
@@ -25,9 +25,9 @@ ULD/PMC20258LX
 ULD/PMC21535AZ
 055-50732080TRNSFO/T1K762MC0.00/CONSOLIDATED SH
 OCI///ST/..H..ALH..H..
-///ST/..DTI..BRT..DTI..
 LAST 
 ```
 
-> By default if "..AG.." tags are not present, FFCode will be the set as FFCode of FFM sender 
-if "..S.." tags are not present, **the bordero is not secured**. 
+> Please Note:
+> - By default if "..AG.." tag is not present, the sender SmartCityMXP freight forwarder code will be used
+> - if "..S.." tag is not present, **the bordero is not secured**. 

@@ -8,7 +8,7 @@ type: docs
 weight: 40
 description: 
 ---
-> XML FWB WITH CUSTOM DECLARATION AND SECURITY INFORMATION "NSC"
+> FWB WITH SECURITY INFO AND CUSTOM DECLARATION DELEGATION
 
 ### MAWB
 ```xml
@@ -23,7 +23,7 @@ description:
 	</VersionTypeNumber>
 	<AWBConsignmentDetail>
 		<AirlinePrefix>
-			888
+			020
 		</AirlinePrefix>
 		<AWBNumber>
 			14467110
@@ -114,7 +114,7 @@ description:
 	</Consignee>
 	<Agent>
 		<IATACargoAgentNumericCode>
-			3840000
+			3847250
 		</IATACargoAgentNumericCode>
 		<IATACargoAgentCASSAddress>
 			0010
@@ -123,11 +123,11 @@ description:
 			XXX SERVICE SRL
 		</Name>
 		<Place>
-			VIA XXXXXX 2
+			VIA GARIBALDI 2
 		</Place>
 	</Agent>
 	<SpecialServiceRequest>
-		IT.RA.00000-00.0000.CONSOL.SPX.XXX01.MAR 5 FWB-FHL ENCLOSED SHIPPING DOCUMENTS
+		IT.RA.00058-03.1216.CONSOL.SPX.XXX01.MAR 5 FWB-FHL ENCLOSED SHIPPING DOCUMENTS
 	</SpecialServiceRequest>
 	<ChargeDeclarations>
 		<ISOCurrencyCode>
@@ -292,7 +292,7 @@ description:
 			NRT
 		</PlaceOrAirportCityCode>
 		<AuthorizationSignature>
-			XXXXX CARGO AIRLINE
+			NIPPON CARGO AIRLINE
 		</AuthorizationSignature>
 	</CarriersExecution>
 	<SenderReference>
@@ -314,7 +314,7 @@ description:
 	<SpecialHandlingRequirements>
 		<SHR>
 			<SpecialHandlingCode>
-				NSC
+				SPX
 			</SpecialHandlingCode>
 		</SHR>
 	</SpecialHandlingRequirements>
@@ -324,21 +324,29 @@ description:
 				IT
 			</ISOCountryCode>
 			<InformationIdentifier>
-				EXP
+				ISS
 			</InformationIdentifier>
 			<CustomsInformationIdentifier>
-				M
+				RA
 			</CustomsInformationIdentifier>
 			<SupplementaryCustomsInformation>
-				15ITQ1V1T0142365E3
+				00134-03
 			</SupplementaryCustomsInformation>
 		</OCI>
 		<OCI>
-			<InformationIdentifier>
-				COR
-			</InformationIdentifier>
+			<CustomsInformationIdentifier>
+				ED
+			</CustomsInformationIdentifier>
 			<SupplementaryCustomsInformation>
-				X
+				0928
+			</SupplementaryCustomsInformation>
+		</OCI>
+		<OCI>
+			<CustomsInformationIdentifier>
+				ST
+			</CustomsInformationIdentifier>
+			<SupplementaryCustomsInformation>
+				..DTI..FSC..DTI..
 			</SupplementaryCustomsInformation>
 		</OCI>
 	</OtherCustomsInformation>

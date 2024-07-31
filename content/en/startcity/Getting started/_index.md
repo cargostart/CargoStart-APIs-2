@@ -3,7 +3,7 @@
 title: "Getting Started"
 linkTitle: "Getting Started"
 type: docs
-weight: 20
+weight: 10
 ---
 
 The interaction with the **Malpensa Smart City** can happen in two ways:
