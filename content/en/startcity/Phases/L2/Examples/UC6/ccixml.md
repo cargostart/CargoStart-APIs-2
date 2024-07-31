@@ -8,7 +8,7 @@ type: docs
 weight: 80
 description:
 ---
-> BORDERO (SECURED WITH RA INDICATION) WITH TRASPORT INFORMATIONS
+> BORDERO (SECURED WITH RA INDICATION) WITH TRASPORT information
 
 ### Manifest
 ```xml
