@@ -11,4 +11,4 @@ weight: 30
 
 By compiling the data related to phase 3, the delivery agent will be entitled to use a fast lane for the acceptance operations and the unloading of cargo. As a result, the GHA will be able to save time and reduce the effort of manual data entry. The Forwarder will be able to reduce the delivery times.
 
-At the moment Phase L3 is under review, it will probably replaced by a dedicated APP end of 2023.
+At the moment Phase L3 is in test phase by a dedicated APP.
