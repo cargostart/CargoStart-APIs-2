@@ -35,7 +35,7 @@ With the right credentials, you will obtain an **HTTP STATUS CODE 200** and a **
 ## The Authorization
 It is possible to extract valuable information from our token, in the PAYLOAD section such as the expiration date, usually set to **120 minutes**; this could help you to develop a system to refresh your token before the expiration.
 
-## Things to Remember:
+## Things to Remember
 
 * One credential, one FreighForwarder (and its relatives' branches)
 * After FIVE wrong login attempts, for security reasons, the account is blocked, and you have to contact our support team.

@@ -15,13 +15,13 @@ enableRobotsTXT: false
 # Will give values to .Lastmod etc.
 enableGitInfo: false
 
-# Comment out to enable taxonomies in Docsy
-disableKinds: [taxonomy, term]
+# Comment out to disable taxonomies in Docsy
+disableKinds: [taxonomy]
 
 # You can add your own taxonomies
 taxonomies:
-  tag: tags
-  category: categories
+#  tag: tags
+#  category: categories
 
 # Highlighting config
 pygmentsCodeFences: true
@@ -50,7 +50,6 @@ languages:
     description: CargoStart Documentation Site
     params:
       description: Documentation Site
-
 markup:
   goldmark:
     parser:
@@ -73,15 +72,13 @@ markup:
 params:
   taxonomy:
     # set taxonomyCloud = [] to hide taxonomy clouds
-    # taxonomyCloud: [tags, categories]
-    taxonomyCloud: []
+    #taxonomyCloud: []
 
     # If used, must have same length as taxonomyCloud
-    taxonomyCloudTitle: [Tag Cloud, Categories]
+    #taxonomyCloudTitle: []
 
     # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-    taxonomyPageHeader: []
-    
+    #taxonomyPageHeader: []
 
   privacy_policy: https://www.cargostart.net/privacy-policy/
 
@@ -100,14 +97,14 @@ params:
   # The version number for the version of the docs represented in this doc set.
   # Used in the "version-banner" partial to display a version number for the
   # current doc set.
-  version: 2.0
+  version: 3.0
 
   # A link to latest version of the docs. Used in the "version-banner" partial to
   # point people to the main doc site.
   url_latest_version: https://docs.cargostart.net
 
   # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-  #github_repo: https://github.com/cargostart
+  #github_repo: https://github.com/google/docsy-example
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
   #github_project_repo: https://github.com/google/docsy
@@ -171,20 +168,7 @@ params:
         icon: fab fa-x-twitter
         desc: Follow us on Twitter to get the latest news!
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-    #
-    # developer:
-    #   - name: GitHub
-    #     url: https://github.com/google/docsy
-    #     icon: fab fa-github
-    #     desc: Development takes place here!
-    #   - name: Slack
-    #     url: https://example.org/slack
-    #     icon: fab fa-slack
-    #     desc: Chat with other project developers
-    #   - name: Developer mailing list
-    #     url: https://example.org/mail
-    #     icon: fa fa-envelope
-    #     desc: Discuss development issues around the project
+
 
 module:
   # Uncomment the next line to build and serve using local docsy clone declared in the named Hugo workspace:

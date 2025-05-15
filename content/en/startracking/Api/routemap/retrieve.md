@@ -12,82 +12,333 @@ description: >
 Once you know which AWB # you want to retrieve you can do that merely adding the awb# to the route map endpoint,
 
 ```http
-POST /ffw/startracking/routemap HTTP/1.1
-Host: api.startracking.aero
-Accept: application/json, text/json
+GET /ffw/startracking/routemap/17607818425 HTTP/1.1
+Authorization: Bearer {{BEARER TOKEN}}
 Content-Type: application/json
-Authorization: {{tokenid}}
-Content-Length: 59
-
-{
-    "AirlinePrefix": "057",
-    "AwbNumber": "06726510"
-}
+Host: api.startracking.aero
 ```
 ### Anatomy of a Routemap Response
 
 
 ```json
 {
-    "TotalItems": 1,
-    "TotalPages": 1,
-    "PageSize": 100,
-    "CurrentPage": 1,
-    "Items": [
+  "MilestonePlan": {
+    "OriginCycle": {
+      "Milestone": [
         {
-            "RMRank": 30,
-            "SRRank": 20,
-            "IsRM": true,
-            "LastUpdate": "2022-07-19T13:38:14",
-            "Shipment": {
-                "AirlinePrefix": "020",
-                "AwbNumber": "27032331",
-                "Routing": {
-                    "Origin": "SWK",
-                    "Destination": "MAA"
-                },
-                "Total": {
-                    "NoOfPieces": 1,
-                    "WeightCode": "K",
-                    "Weight": 84.0,
-                    "VolumeCode": "CM",
-                    "Volume": 0.24
-                }
+          "Status": "Ko",
+          "ArchivedStatus": "Ko",
+          "Name": "FWB",
+          "Station": "SWK",
+          "PlannedDateTime": {
+            "Utc": "2025-02-25T12:00:00Z",
+            "Local": "2025-02-25T13:00:00"
+          },
+          "ActualDateTime": {
+            "Utc": "2025-02-25T13:10:26Z",
+            "Local": "2025-02-25T14:10:26"
+          },
+          "IsReplanned": false,
+          "ActualNoOfPieces": 12
+        },
+        {
+          "Status": "Missing",
+          "ArchivedStatus": "Missing",
+          "Name": "LAT",
+          "Station": "SWK",
+          "PlannedDateTime": {
+            "Utc": "2025-02-25T12:05:00Z",
+            "Local": "2025-02-25T13:05:00"
+          },
+          "ActualDateTime": null,
+          "IsReplanned": false,
+          "ActualNoOfPieces": 0
+        },
+        {
+          "Status": "Ko",
+          "ArchivedStatus": "Ko",
+          "Name": "RCS",
+          "Station": "SWK",
+          "PlannedDateTime": {
+            "Utc": "2025-02-25T16:05:00Z",
+            "Local": "2025-02-25T17:05:00"
+          },
+          "ActualDateTime": {
+            "Utc": "2025-02-25T18:24:41Z",
+            "Local": "2025-02-25T19:24:41"
+          },
+          "IsReplanned": false,
+          "ActualNoOfPieces": 12
+        }
+      ],
+      "Status": "Partial",
+      "isReplanned": false
+    },
+    "RoutingCycle": {
+      "Flight": [
+        {
+          "FlightInfo": {
+            "CarrierCode": "EK",
+            "Number": "9806T",
+            "Date": "25FEB",
+            "Scheduled": {
+              "DepartureDateTime": {
+                "Utc": "2025-02-25T18:05:00Z",
+                "Local": "2025-02-25T19:05:00"
+              },
+              "ArrivalDateTime": {
+                "Utc": "2025-02-26T07:00:00Z",
+                "Local": "2025-02-26T08:00:00"
+              }
             },
-            "DeliveryDate": {
-                "Utc": "2022-07-22T04:20:00Z",
-                "Local": "2022-07-22T09:50:00"
+            "Actual": null,
+            "Routing": {
+              "Origin": "SWK",
+              "Destination": "BLQ"
             },
-            "ReceiptDate": {
-                "Utc": "2022-07-19T17:00:00Z",
-                "Local": "2022-07-19T19:00:00"
+            "isRoadFeederService": true
+          },
+          "Total": {
+            "NoOfPieces": 12,
+            "WeightCode": "K",
+            "Weight": 2480,
+            "VolumeCode": "CM",
+            "Volume": 6.74
+          },
+          "PlannedTotal": null,
+          "Milestone": [
+            {
+              "Status": "Missing",
+              "ArchivedStatus": "Missing",
+              "Name": "DEP",
+              "Station": "SWK",
+              "PlannedDateTime": {
+                "Utc": "2025-02-25T19:05:00Z",
+                "Local": "2025-02-25T20:05:00"
+              },
+              "ActualDateTime": null,
+              "IsReplanned": false,
+              "ActualNoOfPieces": 0
             },
-            "ProductCode": "YNZ",
-            "IsRoadFeederService": false,
-            "Status": "Booked",
-            "IsReplanned": false,
-            "RoutingIsReplanned": false,
-            "OriginState": 1,
-            "RoutingState": 2,
-            "DestinationState": 2,
-            "Origin": {
-                "Status": "Partial",
-                "Warnings": true
+            {
+              "Status": "Missing",
+              "ArchivedStatus": "Missing",
+              "Name": "ARR",
+              "Station": "BLQ",
+              "PlannedDateTime": {
+                "Utc": "2025-02-26T07:40:00Z",
+                "Local": "2025-02-26T08:40:00"
+              },
+              "ActualDateTime": null,
+              "IsReplanned": false,
+              "ActualNoOfPieces": 0
+            },
+            {
+              "Status": "Ko",
+              "ArchivedStatus": "Ko",
+              "Name": "RCF",
+              "Station": "BLQ",
+              "PlannedDateTime": {
+                "Utc": "2025-02-26T07:45:00Z",
+                "Local": "2025-02-26T08:45:00"
+              },
+              "ActualDateTime": {
+                "Utc": "2025-02-26T10:55:51Z",
+                "Local": "2025-02-26T11:55:51"
+              },
+              "IsReplanned": false,
+              "ActualNoOfPieces": 12
+            }
+          ]
+        },
+        {
+          "FlightInfo": {
+            "CarrierCode": "EK",
+            "Number": "94",
+            "Date": "26FEB",
+            "Scheduled": {
+              "DepartureDateTime": {
+                "Utc": "2025-02-26T13:30:00Z",
+                "Local": "2025-02-26T14:30:00"
+              },
+              "ArrivalDateTime": {
+                "Utc": "2025-02-26T19:20:00Z",
+                "Local": "2025-02-26T23:20:00"
+              }
+            },
+            "Actual": {
+              "DepartureDateTime": {
+                "Utc": "2025-02-26T13:19:00Z",
+                "Local": "2025-02-26T14:19:00"
+              },
+              "ArrivalDateTime": {
+                "Utc": "2025-02-26T19:01:00Z",
+                "Local": "2025-02-26T23:01:00"
+              }
             },
             "Routing": {
-                "Status": "Planned",
-                "Warnings": null
+              "Origin": "BLQ",
+              "Destination": "DXB"
             },
-            "Destination": {
-                "Status": "Planned",
-                "Warnings": null
+            "isRoadFeederService": false
+          },
+          "Total": {
+            "NoOfPieces": 12,
+            "WeightCode": "K",
+            "Weight": 2480,
+            "VolumeCode": "CM",
+            "Volume": 6.74
+          },
+          "PlannedTotal": null,
+          "Milestone": [
+            {
+              "Status": "Ok",
+              "ArchivedStatus": "Ok",
+              "Name": "DEP",
+              "Station": "BLQ",
+              "PlannedDateTime": {
+                "Utc": "2025-02-26T14:30:00Z",
+                "Local": "2025-02-26T15:30:00"
+              },
+              "ActualDateTime": {
+                "Utc": "2025-02-26T13:19:00Z",
+                "Local": "2025-02-26T14:19:00"
+              },
+              "IsReplanned": false,
+              "ActualNoOfPieces": 12
             },
-            "CreationDate": {
-                "Utc": "2022-07-19T13:38:14Z",
-                "Local": "2022-07-19T15:38:14"
+            {
+              "Status": "Ok",
+              "ArchivedStatus": "Ok",
+              "Name": "ARR",
+              "Station": "DXB",
+              "PlannedDateTime": {
+                "Utc": "2025-02-26T20:20:00Z",
+                "Local": "2025-02-27T00:20:00"
+              },
+              "ActualDateTime": {
+                "Utc": "2025-02-26T19:01:00Z",
+                "Local": "2025-02-26T23:01:00"
+              },
+              "IsReplanned": false,
+              "ActualNoOfPieces": 12
+            },
+            {
+              "Status": "Ok",
+              "ArchivedStatus": "Ok",
+              "Name": "RCF",
+              "Station": "DXB",
+              "PlannedDateTime": {
+                "Utc": "2025-02-27T00:20:00Z",
+                "Local": "2025-02-27T04:20:00"
+              },
+              "ActualDateTime": {
+                "Utc": "2025-02-26T23:22:06Z",
+                "Local": "2025-02-27T03:22:06"
+              },
+              "IsReplanned": false,
+              "ActualNoOfPieces": 12
             }
+          ]
         }
-    ]
+      ],
+      "Status": "Partial",
+      "isReplanned": false
+    },
+    "DestinationCycle": {
+      "Milestone": [
+        {
+          "Status": "Ok",
+          "ArchivedStatus": "Ok",
+          "Name": "NFD",
+          "Station": "DXB",
+          "PlannedDateTime": {
+            "Utc": "2025-02-27T01:20:00Z",
+            "Local": "2025-02-27T05:20:00"
+          },
+          "ActualDateTime": {
+            "Utc": "2025-02-26T22:04:12Z",
+            "Local": "2025-02-27T02:04:12"
+          },
+          "IsReplanned": false,
+          "ActualNoOfPieces": 12
+        },
+        {
+          "Status": "Ko",
+          "ArchivedStatus": "Ko",
+          "Name": "AWD",
+          "Station": "DXB",
+          "PlannedDateTime": {
+            "Utc": "2025-02-27T03:20:00Z",
+            "Local": "2025-02-27T07:20:00"
+          },
+          "ActualDateTime": {
+            "Utc": "2025-02-27T07:02:52Z",
+            "Local": "2025-02-27T11:02:52"
+          },
+          "IsReplanned": false,
+          "ActualNoOfPieces": 12
+        },
+        {
+          "Status": "Ok",
+          "ArchivedStatus": "Ok",
+          "Name": "DLV",
+          "Station": "DXB",
+          "PlannedDateTime": {
+            "Utc": "2025-03-01T19:20:00Z",
+            "Local": "2025-03-01T23:20:00"
+          },
+          "ActualDateTime": {
+            "Utc": "2025-02-27T08:01:31Z",
+            "Local": "2025-02-27T12:01:31"
+          },
+          "IsReplanned": false,
+          "ActualNoOfPieces": 12
+        }
+      ],
+      "Status": "Completed",
+      "isReplanned": false
+    }
+  },
+  "LastUpdate": "2025-02-27T15:25:25Z",
+  "Shipment": {
+    "AirlinePrefix": "176",
+    "AwbNumber": "07818425",
+    "Routing": {
+      "Origin": "SWK",
+      "Destination": "DXB"
+    },
+    "Total": {
+      "NoOfPieces": 12,
+      "WeightCode": "K",
+      "Weight": 2480,
+      "VolumeCode": "CM",
+      "Volume": 6.74
+    }
+  },
+  "DeliveryDate": {
+    "Utc": "2025-02-26T22:04:12Z",
+    "Local": "2025-02-27T02:04:12"
+  },
+  "ReceiptDate": {
+    "Utc": "2025-02-25T18:24:41Z",
+    "Local": "2025-02-25T19:24:41"
+  },
+  "ProductCode": "GCR",
+  "IsRoadFeederService": false,
+  "Status": "AtDestination",
+  "IsReplanned": false,
+  "RoutingIsReplanned": false,
+  "OriginState": 0,
+  "RoutingState": 0,
+  "DestinationState": 0,
+  "Origin": null,
+  "Routing": null,
+  "Destination": null,
+  "CreationDate": {
+    "Utc": "2025-02-26T19:27:10Z",
+    "Local": "2025-02-26T20:27:10"
+  }
 }
 ```
 
@@ -100,20 +351,20 @@ The Routemap milestone is separated into three different cycles:
 
 Every Cycle has a collection of specific Milestones:
 
-#### OriginCycle
+### OriginCycle
 Here you can find all the origin milestones, every with its information on the Status, the Station of Origin, the Planned and the Actual time 
 *	FWB 
 *	LAT
 *	RCS
 
 
-#### RoutingCycle
+### RoutingCycle
 Essentially a collection of all the flight numbers, from origin to destination; for every flight there are the following milestones:
 *	DEP
 * ARR
 * RCF
 
-#### DestinationCycle
+### DestinationCycle
 * NFD
 * DLV
 
