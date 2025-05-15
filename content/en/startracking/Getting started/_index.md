@@ -1,6 +1,6 @@
 ---
-categories: ["Examples", "Placeholders"]
-tags: ["test","docs"] 
+categories: ["Tutorial", "Video"]
+tags: ["api"] 
 title: "Getting Started"
 linkTitle: "Getting Started"
 date: 2022-07-19
