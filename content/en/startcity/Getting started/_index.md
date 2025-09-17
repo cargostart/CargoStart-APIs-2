@@ -17,4 +17,7 @@ The interaction with the **Malpensa Smart City** can happen in two ways:
 
 Thanks to our partnership with software houses specialised in the airfreight industry, the service can be directly integrated in the management systems in use.
 
-> Requirements: The freight forwarder must have a TMS to generate and send CargoIMP messages. FWB, FHL for Phase L1, FFM for Phase L2.
+
+{{% alert title="Requirements" color="warning" %}}
+ The freight forwarder must have a TMS to generate and send CargoIMP messages. FWB, FHL for Phase L1, FFM for Phase L2.
+{{% /alert %}}

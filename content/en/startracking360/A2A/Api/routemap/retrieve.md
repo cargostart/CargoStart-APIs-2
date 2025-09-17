@@ -11,13 +11,15 @@ description: >
 ---
 Once you know which AWB # you want to retrieve you can do that merely adding the awb# to the route map endpoint,
 
+## Request
+
 ```http
 GET /ffw/startracking/routemap/17607818425 HTTP/1.1
 Authorization: Bearer {{BEARER TOKEN}}
 Content-Type: application/json
 Host: api.startracking.aero
 ```
-### Anatomy of a Routemap Response
+##  Response
 
 
 ```json
@@ -341,30 +343,31 @@ Host: api.startracking.aero
   }
 }
 ```
+### Anatomy of the Response
 
 You can see many parts are similar to the Routemap Search response; we will concentrate only to the new properties.
 
 The Routemap milestone is separated into three different cycles:
-* OriginCycle 
-* RoutingCycle
-* DestinationCycle
+* [OriginCycle](#origincycle) 
+* [RoutingCycle](#routingcycle) 
+* [DestinationCycle](#destinationcycle) 
 
 Every Cycle has a collection of specific Milestones:
 
-### OriginCycle
+#### OriginCycle
 Here you can find all the origin milestones, every with its information on the Status, the Station of Origin, the Planned and the Actual time 
 *	FWB 
 *	LAT
 *	RCS
 
 
-### RoutingCycle
+#### RoutingCycle
 Essentially a collection of all the flight numbers, from origin to destination; for every flight there are the following milestones:
 *	DEP
 * ARR
 * RCF
 
-### DestinationCycle
+#### DestinationCycle
 * NFD
 * DLV
 
@@ -381,7 +384,7 @@ Milestone Status property can be
 
 They summarize all the milestones inside the specific Cycle.
 
-#### Routemap with its History
+## Routemap with its History
 
 In case you need all the life cycle of a Routemap, you can add the "/history" word to the call: 
 

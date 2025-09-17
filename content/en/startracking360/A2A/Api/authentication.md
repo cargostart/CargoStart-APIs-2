@@ -11,7 +11,10 @@ description: >
 ---
 This token is generated calling our **login** endpoint. 
 
-> If you haven't done yet, please take a moment to watch our video **[CargoStart API a Sneak Peek introduction](/startracking/getting-started/#a-sneak-peek-introduction)** that quickly shows three distinct ways on how consuming our API.
+
+{{% alert title="Note" color="warning" %}}
+ If you haven't done yet, please take a moment to watch our video **[CargoStart API a Sneak Peek introduction]({{< relref "/startracking360/A2A/Getting started#a-sneak-peek-introduction" >}})**. It gives a quick overview of three different ways you can consume our API.
+{{% /alert %}}
 
 ## The Authentication
 
