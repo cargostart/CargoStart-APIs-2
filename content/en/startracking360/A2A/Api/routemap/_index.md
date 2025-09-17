@@ -9,9 +9,16 @@ weight: 20
 description: >
   In short, a Route Map summarizes - in real-time - the whole life cycle of an air cargo shipment, from booking to delivery.
 ---
-> We assume you are already familiar with our and authentication; if not please watch before:
-> * **[CargoStart API a Sneak Peek introduction](/startracking/getting-started/#a-sneak-peek-introduction)**
-> * **[StarTracking Authentication and Authorization](/startracking/api/authentication/)**
+
+{{% alert title="Note" color="warning" %}}
+We assume you are already familiar with StarTracking A2A authentication module; if not please watch before:
+
+- **[CargoStart API a Sneak Peek introduction]({{< relref "/startracking360/A2A/Getting started#a-sneak-peek-introduction" >}})**
+- **[StarTracking Authentication and Authorization]({{< relref "/startracking360/A2A/Api/authentication" >}})**
+
+
+
+{{% /alert %}}
 
 Without any doubt, the Route Map concept is the central pillar of our Startracking service.
 
