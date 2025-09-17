@@ -3,7 +3,7 @@ categories: ["API"]
 tags: ["api", "openapi"] 
 title: "OpenApi"
 linkTitle: "OpenApi"
-date: 2022-07-19
+date: 2025-09-16
 type: swagger
 weight: 2
 description: >

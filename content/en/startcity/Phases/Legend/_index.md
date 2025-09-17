@@ -8,7 +8,11 @@ weight: 40
 
 **LEGEND OF CODES AND FIELDS SPECIFICATION**:
 
-> The English meaning of Bordero is **DELIVERY NOTE**
+{{% alert title="Note" color="warning" %}}
+ The English meaning of Bordero is **DELIVERY NOTE**
+{{% /alert %}}
+
+
 
 | Code | Mandatory | Name                      | Notes                                                        |
 | :--: | :-------: | :------------------------ | :----------------------------------------------------------- |
@@ -18,21 +22,22 @@ weight: 40
 | BDX  |     N     | Bordero ID              | Customer Identification for Bordero		              |
 |  H   |     C 	   | Handler                   | SmartCity Handler (es. MLE. ALH). Mandatory for Phase 2. For Phase 1, if not indicated, Ecosystem Cargo MXP assigns it automatically |
 |  AG  |     Y     | Agent Code                |                                                              |
-|  DN  |     N     | Driver Name               |                                                              |
-|  DT  |     N     | Document Type             |                                                              |
-|  DA  |     N     | Document Issuer Authority |                                                              |
-|  DI  |     N     | Document Number           |                                                              |
-|  PN  |     N     | PLATE #                   | Can be Repeated                                              |
-|  SN  |     N     | SEAL #                    | Can be Repeated                                              |
-|  CN  |     Y     | DRIVER COMPANY NAME       | Name of the company for which the driver works.              |
-|  TN  |     N     | TRUCK COMPANY NAME        | Name of the company to which the truck belongs.              |
-| DN2  |     N     | DRIVER NAME               | 2nd DRIVER                                                   |
-| DT2  |     N     | DOCUMENT TYPE             | 2nd DRIVER                                                   |
-| DA2  |     N     | DOCUMENT AUTHORITY        | 2nd DRIVER                                                   |
-| DI2  |     N     | DOCUMENT NUMBER           | 2nd DRIVER                                                   |
-| CN2  |     N     | COMPANY NAME              | 2nd DRIVER    
+|  DN  |     C     | Driver Name               |[^2]                                                              |
+|  DT  |     C     | Document Type             |[^2]                                                              |
+|  DA  |     C     | Document Issuer Authority |[^2]                                                              |
+|  DI  |     C     | Document Number           |[^2]                                                              |
+|  PN  |     C     | PLATE #                   | Can be Repeated [^2]                                              |
+|  SN  |     C     | SEAL #                    | Can be Repeated [^2]                                             |
+|  CN  |     C     | DRIVER COMPANY NAME       | Name of the company for which the driver works. [^2]              |
+|  TN  |     C     | TRUCK COMPANY NAME        | Name of the company to which the truck belongs. [^2]             |
+| DN2  |     C     | DRIVER NAME               | 2nd DRIVER [^2]                                                  |
+| DT2  |     C     | DOCUMENT TYPE             | 2nd DRIVER [^2]                                                  |
+| DA2  |     C     | DOCUMENT AUTHORITY        | 2nd DRIVER [^2]                                                  |
+| DI2  |     C     | DOCUMENT NUMBER           | 2nd DRIVER [^2]                                                  |
+| CN2  |     C     | COMPANY NAME              | 2nd DRIVER [^2]   
 | DTI  |    N	   | Code of subject delegated to Transport Information | 	
 | DSI  | N			| Code of subject delegated to Security Information| 
 | DCD  |    N			| Code of subject delegated to Custom Declaration| 
 
 [^1]: if Bordero is secured, Regulated Agent must be indicated| 
+[^2]: Under the latest SEA SmartCityMXP rules, these fields are optional. If you choose to provide one, you must also provide all the others.
