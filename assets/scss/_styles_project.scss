@@ -1,0 +1,30 @@
+/* assets/scss/_styles_project.scss */
+.td-content .alert-primary {
+  /* Prefer CSS vars (BS 5.2/5.3) */
+  --bs-alert-bg: #f9f9f9 !important;
+  --bs-alert-border-color: #ff4f00 !important;
+  --bs-alert-color: #333333 !important;
+
+  /* Fallback for older bundles / over-aggressive overrides */
+  background-color: #fff3eb !important;
+  border-color: #ff4f00 !important;
+  color: #333333 !important;
+}
+
+
+.td-content .alert-primary .alert-heading {
+  color: #ff4f00 !important;
+}
+
+/* Global link color overrides */
+a,
+a:visited {
+  color: #ff4f00 !important;
+  text-decoration: none; /* optional: remove underline */
+}
+
+a:hover,
+a:focus {
+  color: #cc3f00 !important; /* darker orange for hover/focus */
+  text-decoration: underline; /* optional: show underline on hover */
+}

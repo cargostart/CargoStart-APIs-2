@@ -36,3 +36,13 @@ This is our simplified yet powerful Route Map. It is fed by the Status Update me
 Both Route Maps sport the “snapshot” feature; any changes are stored as a snapshot, so all the history can be reviewed if needed.
 
 
+## XTD Route Map
+
+Our latest and new **Extended Tracking Data Route Map** provides a complete view of all tracking events related to a shipment, even if you are **not the legal owner** of the Air Waybill (AWB) number.  
+This feature is especially useful in scenarios where multiple parties need visibility across the logistics chain.
+
+Typical use cases include:
+- Import visibility for forwarders and consignee agents.
+- Third-party monitoring (e.g., ground handlers, GSAs, or customs brokers).
+- Operational control towers that supervise multiple carriers or shipments.
+- Exception management and proactive alerts across the transport chain.

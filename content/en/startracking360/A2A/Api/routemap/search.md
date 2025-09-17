@@ -145,7 +145,9 @@ we obtain
 
 > CreationDate, can be replaced by DeliveryDate or ReceiptDate.
 
-### Retrieve all the shipments of a carrier:
+## Retrieve
+
+### All the shipments of a carrier
 
 ```json
 {
@@ -273,7 +275,7 @@ The Search request can be sorted by:
 }
 ```
 
-### Anatomy of a Routemap Search Response
+## Anatomy of a Routemap Search Response
 
 A response is formed by one Header section and one array of Items.
 

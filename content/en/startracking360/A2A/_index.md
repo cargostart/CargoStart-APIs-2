@@ -4,9 +4,7 @@ title: "Airport to Airport"
 linkTitle: "A2A"
 type: docs
 weight: 10
+description: >
+  What do you need to integrate CargoStart StarTracking A2A module.
 ---
-
-At CargoStart, we firmly believe that a good service should provide the right information at the right moment in the right manner, not forcing the end user to walk between portals and legacy applications.
-
-To do that, we developed a set of APIs to simplify the interactions between our platform and other external systems.
 
