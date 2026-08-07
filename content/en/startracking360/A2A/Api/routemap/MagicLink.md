@@ -24,7 +24,7 @@ Authorization: Bearer {{BEARER TOKEN}}
 | Parameter | Type | Required | Description |
 |------------|------|----------|-------------|
 | AWB | string | Yes | Air Waybill number composed of exactly 11 digits. |
-| day | integer | No | Number of days the Magic Link remains valid. Values greater than 10 are automatically set to 10. Values below 0 are used to disable any previosly generated link. |
+| day | integer | No | Number of days the Magic Link remains valid. Values greater than 10 are automatically set to 10. Values less than or equal to 0 disable any previously generated Link. |
 
 ## Response
 
