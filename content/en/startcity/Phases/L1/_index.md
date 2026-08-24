@@ -10,7 +10,7 @@ weight: 10
 
 **Phase 1** concerns the compilation of data describing cargo which is about to be shipped to Malpensa airport.
 
-Data include **AWB (FWB)**, possible **HAWB (FHL)**, customs declarations and security checks that will have to be filled out by the Forwarder or by a delegated party.
+Data include **AWB (FWB)**, possible **HAWB (FHL)**, customs declarations and security infos that will have to be filled out by the Forwarder or by a delegated party.
 
 The following information have to be provided for each data item:
 
@@ -18,7 +18,9 @@ The following information have to be provided for each data item:
 
 -   **COR** customs declaration (eg "COR/**X**", "COR/**T1**", etc.);
 
--   **SPH** security informaton (eg. "SPH/**SPX"**, "SPH/**SCO**").
+-   **SPH** security informaton (eg. "SPH/**SPX"**, "SPH/**SCO**");
+
+-   **OCI** information about security checks and customs declarations (only in case of direct shipment).
 
 **HAWB**
 

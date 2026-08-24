@@ -12,13 +12,27 @@ OCI/IT/EXP/M/15ITQ1V1T0240456E9
 ```
 **15ITQ1V1T0240456E9** is the _MRN_; **X** is the customs status (eg. X, T1, T2, TBD).
 
-> Note: in case the customs status is **TBD** (To Be Declared), the related data must e reported to the _Customs Agent_.
+> Note: in case the customs status is **TBD** (To Be Declared), the _Custom operator_ will carry out the customs operation at the airport;
 
-The Custom Agent will carry out the customs operation at the airport with the following syntax:
+Customs Declaration data must be reported indicating the SmartCity Code of Custom operator with the following syntax:
 
 ```
-/IT/COR//TBD
+OCI/IT/COR//TBD
 ///ST/..C..XYZ..C..
 ```
 
-P.S: The custom agent field is a free text; by the way, to comply with the latest SEA SmartCity MXP guideline, the required value is the 3 digit SmartCityMXP Code.
+In the case where the airport customs operator is not registered in Smart City Ecosystem, the name of the operator must be inserted with the following syntax:
+
+```
+OCI//IT/COR//TBD
+///ST/..C..MARIO ROSSI..C..
+```
+
+> **Delegation**
+
+Sending Custom Declaration data can be delegated at a third ecosystem user with the following syntax:
+
+```
+OCI///ST/..DCD..YYY..DCD..
+```
+**YYY** is the SmartCity code of delegated user.
