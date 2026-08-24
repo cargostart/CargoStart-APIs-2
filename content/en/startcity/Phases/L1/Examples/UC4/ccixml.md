@@ -343,6 +343,36 @@ description:
 				15ITQ1V1T0142365E3
 			</SupplementaryCustomsInformation>
 		</OCI>
+		<OCI>
+			<ISOCountryCode>
+				IT
+			</ISOCountryCode>
+			<InformationIdentifier>
+				ISS
+			</InformationIdentifier>
+			<CustomsInformationIdentifier>
+				RA
+			</CustomsInformationIdentifier>
+			<SupplementaryCustomsInformation>
+				00000-01
+			</SupplementaryCustomsInformation>
+		</OCI>
+		<OCI>
+			<CustomsInformationIdentifier>
+				ED
+			</CustomsInformationIdentifier>
+			<SupplementaryCustomsInformation>
+				0717
+			</SupplementaryCustomsInformation>
+		</OCI>
+		<OCI>
+			<CustomsInformationIdentifier>
+				SM
+			</CustomsInformationIdentifier>
+			<SupplementaryCustomsInformation>
+				XRY
+			</SupplementaryCustomsInformation>
+		</OCI>
 	</OtherCustomsInformation>
 </Master>
 ```

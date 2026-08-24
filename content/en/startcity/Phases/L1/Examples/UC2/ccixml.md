@@ -472,50 +472,6 @@ description:
 						IT
 					</ISOCountryCode>
 					<InformationIdentifier>
-						EXP
-					</InformationIdentifier>
-					<CustomsInformationIdentifier>
-						M
-					</CustomsInformationIdentifier>
-					<SupplementaryCustomsInformation>
-						15ITQ1V1T0142365E3
-					</SupplementaryCustomsInformation>
-				</OCI>
-				<OCI>
-					<InformationIdentifier>
-						COR
-					</InformationIdentifier>
-					<SupplementaryCustomsInformation>
-						X
-					</SupplementaryCustomsInformation>
-				</OCI>
-				<OCI>
-					<ISOCountryCode>
-						IT
-					</ISOCountryCode>
-					<InformationIdentifier>
-						EXP
-					</InformationIdentifier>
-					<CustomsInformationIdentifier>
-						M
-					</CustomsInformationIdentifier>
-					<SupplementaryCustomsInformation>
-						15ITQ1V1T0142331E3
-					</SupplementaryCustomsInformation>
-				</OCI>
-				<OCI>
-					<InformationIdentifier>
-						COR
-					</InformationIdentifier>
-					<SupplementaryCustomsInformation>
-						T2
-					</SupplementaryCustomsInformation>
-				</OCI>
-				<OCI>
-					<ISOCountryCode>
-						IT
-					</ISOCountryCode>
-					<InformationIdentifier>
 						COR
 					</InformationIdentifier>
 					<SupplementaryCustomsInformation>
