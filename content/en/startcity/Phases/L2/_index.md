@@ -21,3 +21,13 @@ From a technical point of view, given that the OCI field in the FFM is repeatabl
 - Enter the ID line **ST** inside **the last OCI field** in the **FFM** for the information related to the **Bordero.**
 - Optionally, Enter the OSI field for the possible identification of the customer/forwarder (**Customer Id**)
 
+
+
+> **Delegation**
+
+Sending Phase L2 data can be delegated at a third ecosystem user using FWB,FHL messages with the following syntax:
+
+OCI///ST/..DTI..YYY..DTI..
+
+YYY is the delegated SmarCity user Code
+
