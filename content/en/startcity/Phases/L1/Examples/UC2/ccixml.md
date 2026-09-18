@@ -368,7 +368,7 @@ description:
 	</VersionTypeNumber>
 	<MasterAWBConsignmentDetail>
 		<AirlinePrefix>
-			020
+			888
 		</AirlinePrefix>
 		<AWBNumber>
 			14467110
